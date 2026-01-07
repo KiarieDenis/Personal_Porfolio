@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="hero-content rush-in-left">
+        <div class="section-title">Introduction</div>
+        <h1 class="heading-xl">Denis Kiarie<span class="text-accent">.</span></h1>
+        <h2 class="heading-md text-muted">Data Scientist | ML and AI Engineer | Systems Thinker</h2>
+
+        <p
+            style="margin-top: 2rem; font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; line-height: 1.8;">
+            A technically driven programmer with growing experience in software engineering and applied AI, interested
+            in building reliable, scalable systems through automation and data-driven approaches.
+        </p>
+
+        <p
+            style="margin-top: 2rem; font-size: 1rem; color: var(--text-primary); max-width: 600px; border-left: 2px solid var(--accent-yellow); padding-left: 1.5rem; line-height: 1.8;">
+            Currently a student learning Data Analytics, Data Science, Python ML, AI, and Game Development.
+        </p>
+
+        <a href="{{ url_for('portfolio') }}#story" class="btn">Read My Story</a>
+    </div>
+
+    <div class="hero-image rush-in-right">
+        <div style="width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+            <img src="{{ url_for('static', filename='images/denis1.jpg') }}" alt="Denis Kiarie"
+                style="width: 100%; height: auto; display: block; filter: grayscale(100%); transition: filter 0.5s;">
+        </div>
+    </div>
+</section>
+
+<section style="padding: 6rem 0;">
+    <div class="section-title" style="margin-bottom: 0.5rem;">My Philosophy</div>
+    <div class="heading-lg" style="margin-bottom: 4rem;">Most people learn tools.<br> <span class="text-accent">I study
+            patterns.</span></div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+        <div class="rush-in-left">
+            <p class="text-muted" style="margin-bottom: 2rem; line-height: 1.8;">
+                From an early stage, I've shown an unusual ability to connect ideas across domains—from machine learning
+                and data pipelines to backend systems, APIs, and automation platforms. Rather than chasing trends
+                blindly, I focus on leverage: tools and systems that scale effort, eliminate manual work, and create
+                long-term value.
+            </p>
+            <p class="text-muted" style="line-height: 1.8;">
+                My curiosity is structured, not random. I learn with intent.
+            </p>
+        </div>
+        <div class="rush-in-right">
+            <ul style="border-left: 1px solid var(--border-color); padding-left: 2.5rem; margin-top: 1rem;">
+                <li style="margin-bottom: 1.5rem;"><strong>Vision:</strong> Creating intelligent platforms rather than
+                    one-off scripts.</li>
+                <li style="margin-bottom: 1.5rem;"><strong>Goal:</strong> Use AI to augment decision-making, not replace
+                    thinking.</li>
+                <li style="margin-bottom: 1.5rem;"><strong>Approach:</strong> Build before talking. Optimize for
+                    compounding skills.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section style="padding: 4rem 0;">
+    <div class="section-title">Core Strengths</div>
+    <h2 class="heading-lg">What I Bring to the Table</h2>
+
+    <div class="core-strengths">
+        <div class="card strength-card">
+            <h3>Engineering Mindset</h3>
+            <p class="text-muted">Approaching code as a system, not just syntax. Focusing on structure, clarity,
+                performance, and extensibility.</p>
+        </div>
+        <div class="card strength-card">
+            <h3>AI & Data Thinking</h3>
+            <p class="text-muted">Deep interest in applied AI: recommendation systems, prediction models, and automation
+                agents that solve specific problems.</p>
+        </div>
+        <div class="card strength-card">
+            <h3>Product Problem Solving</h3>
+            <p class="text-muted">Asking "Should this exist?" and "How does it scale?" rather than just "Can this be
+                built?"</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

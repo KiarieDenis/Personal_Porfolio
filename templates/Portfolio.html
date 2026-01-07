@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section style="padding: 4rem 0; overflow-x: hidden;">
+    <div class="section-title rush-in-left">My Journey</div>
+    <div id="story" class="rush-in-right" style="margin-bottom: 6rem;">
+        <h2 class="heading-lg">Building Foundations<span class="text-accent">.</span></h2>
+
+        <div style="max-width: 800px; color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+            <p>
+                I began my academic journey at Mama Ngina Primary School, where I built the foundations that still shape
+                how I think today: discipline, curiosity, and consistency. This was where I first learned how to
+                learn—how to follow structure, respect process, and stay persistent even when progress felt slow. Moving
+                on to Gathiru-ini Secondary School, my thinking matured from absorbing information to questioning it. I
+                became more analytical, more independent, and more aware that progress comes from understanding systems,
+                not memorizing outcomes. Secondary education sharpened my resilience, time management, and
+                responsibility for my own growth.
+            </p>
+
+            <div id="full-story"
+                style="display: none; margin-top: 1.5rem; overflow: hidden; transition: max-height 0.5s ease-out;">
+                <p style="margin-bottom: 1.5rem;">
+                    I continued to Sigalagala National Polytechnic, where theory began to meet real-world application.
+                    This stage transformed my mindset from that of a student to that of a problem solver. I complemented
+                    my academic training with paramilitary training at NYS Kenya, which instilled discipline, mental
+                    toughness, teamwork, and the ability to operate under pressure—skills that translate directly into
+                    engineering and high-responsibility environments. During my industrial attachment at Nairobi Water
+                    and Sewerage Company Ltd, I gained exposure to large-scale operational systems, learning how
+                    infrastructure, data, and human coordination intersect in mission-critical services. This experience
+                    grounded my technical interests in real societal impact.
+                </p>
+                <p>
+                    I later worked at M-Gas Limited, where I learned how structured operations, accountability, and
+                    efficiency drive scalable services. Seeing technology-enabled systems support thousands of users
+                    reinforced my desire to build solutions that scale beyond individuals. I am currently a data science
+                    and ML engineering student at ALX, where my focus is on programming, automation, Data, analytics and
+                    applied artificial intelligence. At this stage, my journey converges into a clear direction: I am
+                    Denis Kiarie, a Data Science developer in the making with real-world industry exposure, disciplined
+                    training, and a systems-oriented mindset. I build with intent, learn with depth, and aim to design
+                    intelligent, scalable systems that create leverage, solve real problems, and continue working long
+                    after manual effort stops.
+                </p>
+            </div>
+
+            <button id="toggle-story-btn" class="btn" onclick="toggleStory()" style="margin-top: 2rem;">Read Full
+                Story</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleStory() {
+            var moreText = document.getElementById("full-story");
+            var btnText = document.getElementById("toggle-story-btn");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                btnText.innerHTML = "Show Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.innerHTML = "Read Full Story";
+            }
+        }
+    </script>
+
+    <div class="section-title rush-in-left">Capabilities</div>
+    <h1 class="heading-lg rush-in-left">Technical Arsenal<span class="text-accent">.</span></h1>
+
+    <!-- Skills Slider -->
+    <div class="slider-container rush-in-right" style="margin-top: 3rem; margin-bottom: 6rem;">
+        <div class="slider-track">
+            <!-- Set 1 -->
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/python.svg') }}"
+                    alt="Python"><span>Python</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/flask.svg') }}"
+                    alt="Flask"><span>Flask</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/sql.svg') }}"
+                    alt="SQL"><span>SQL</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/sqlite.svg') }}"
+                    alt="SQLite"><span>SQLite</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/html.svg') }}"
+                    alt="HTML"><span>HTML</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/css.svg') }}"
+                    alt="CSS"><span>CSS</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/git.svg') }}"
+                    alt="Git"><span>Git</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/github.svg') }}"
+                    alt="GitHub"><span>GitHub</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/ms-excel.svg') }}"
+                    alt="Excel"><span>Excel</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/pandas.svg') }}"
+                    alt="Pandas"><span>Pandas</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/numpy.svg') }}"
+                    alt="Numpy"><span>Numpy</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/tensorflow.svg') }}"
+                    alt="TensorFlow"><span>TensorFlow</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/AI.svg') }}"
+                    alt="AI"><span>AI</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/access.svg') }}"
+                    alt="Access"><span>Access</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/microsoft-teams.svg') }}"
+                    alt="Teams"><span>Teams</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/outlook.svg') }}"
+                    alt="Outlook"><span>Outlook</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/postman.svg') }}"
+                    alt="Postman"><span>Postman</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/pycharm.svg') }}"
+                    alt="PyCharm"><span>PyCharm</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/slides.svg') }}"
+                    alt="Slides"><span>Slides</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/word.svg') }}"
+                    alt="Word"><span>Word</span></div>
+
+            <!-- Set 2 (Duplicate for loop) -->
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/python.svg') }}"
+                    alt="Python"><span>Python</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/flask.svg') }}"
+                    alt="Flask"><span>Flask</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/sql.svg') }}"
+                    alt="SQL"><span>SQL</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/sqlite.svg') }}"
+                    alt="SQLite"><span>SQLite</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/html.svg') }}"
+                    alt="HTML"><span>HTML</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/css.svg') }}"
+                    alt="CSS"><span>CSS</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/git.svg') }}"
+                    alt="Git"><span>Git</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/github.svg') }}"
+                    alt="GitHub"><span>GitHub</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/ms-excel.svg') }}"
+                    alt="Excel"><span>Excel</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/pandas.svg') }}"
+                    alt="Pandas"><span>Pandas</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/numpy.svg') }}"
+                    alt="Numpy"><span>Numpy</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/tensorflow.svg') }}"
+                    alt="TensorFlow"><span>TensorFlow</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/AI.svg') }}"
+                    alt="AI"><span>AI</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/access.svg') }}"
+                    alt="Access"><span>Access</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/microsoft-teams.svg') }}"
+                    alt="Teams"><span>Teams</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/outlook.svg') }}"
+                    alt="Outlook"><span>Outlook</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/postman.svg') }}"
+                    alt="Postman"><span>Postman</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/pycharm.svg') }}"
+                    alt="PyCharm"><span>PyCharm</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/slides.svg') }}"
+                    alt="Slides"><span>Slides</span></div>
+            <div class="slider-item"><img src="{{ url_for('static', filename='icons/word.svg') }}"
+                    alt="Word"><span>Word</span></div>
+        </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <div style="margin-top: 4rem;">
+        <div class="section-title rush-in-left">Validations</div>
+        <h2 class="heading-lg rush-in-left">Certificates<span class="text-accent">.</span></h2>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-top: 3rem;">
+
+            <!-- Cert 1 -->
+            <div class="certificate-card rush-in-left">
+                <img src="{{ url_for('static', filename='certificates/professional-foundations-certificate-denis-kiarie.png') }}"
+                    class="cert-image" alt="Professional Foundations">
+                <div>
+                    <h3 class="heading-md">Professional Foundations</h3>
+                    <p class="text-muted">Core professional skills and operational foundations validation.</p>
+                    <a href="#" class="view-cert-btn"
+                        style="display: block; margin-top: 0.5rem; color: var(--accent-yellow); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;"
+                        data-src="{{ url_for('static', filename='certificates/professional-foundations-certificate-denis-kiarie.png') }}"
+                        data-caption="Professional Foundations">View -></a>
+                </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="certificate-card rush-in-right">
+                <img src="{{ url_for('static', filename='certificates/IT certificate..png') }}" class="cert-image"
+                    alt="IT Certificate">
+                <div>
+                    <h3 class="heading-md">IT Studies</h3>
+                    <p class="text-muted">Comprehensive Information Technology certification covering systems and
+                        networking.</p>
+                    <a href="#" class="view-cert-btn"
+                        style="display: block; margin-top: 0.5rem; color: var(--accent-yellow); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;"
+                        data-src="{{ url_for('static', filename='certificates/IT certificate..png') }}"
+                        data-caption="IT Studies">View -></a>
+                </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div class="certificate-card rush-in-left">
+                <img src="{{ url_for('static', filename='certificates/Computer Application.png') }}" class="cert-image"
+                    alt="Computer Application">
+                <div>
+                    <h3 class="heading-md">Computer Applications</h3>
+                    <p class="text-muted">Proficiency in essential computer software and productivity tools.</p>
+                    <a href="#" class="view-cert-btn"
+                        style="display: block; margin-top: 0.5rem; color: var(--accent-yellow); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;"
+                        data-src="{{ url_for('static', filename='certificates/Computer Application.png') }}"
+                        data-caption="Computer Applications">View -></a>
+                </div>
+            </div>
+
+            <!-- Cert 4 -->
+            <div class="certificate-card rush-in-right">
+                <img src="{{ url_for('static', filename='certificates/Certificate of Service M-Gas.png') }}"
+                    class="cert-image" alt="Certificate of Service">
+                <div>
+                    <h3 class="heading-md">Service Excellence</h3>
+                    <p class="text-muted">Certificate of Service and Recommendation from M-Gas.</p>
+                    <a href="#" class="view-cert-btn"
+                        style="display: block; margin-top: 0.5rem; color: var(--accent-yellow); font-weight: 600; text-transform: uppercase; font-size: 0.9rem;"
+                        data-src="{{ url_for('static', filename='certificates/Certificate of Service M-Gas.png') }}"
+                        data-caption="Service Excellence">View -></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
